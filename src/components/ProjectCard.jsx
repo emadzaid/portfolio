@@ -21,7 +21,6 @@ const ProjectCard = ({name, desc, imgUrl, url, gradient, codeUrl, builtWith}) =>
                 <LazyLoadImage className="h-72 max:w-full w-80 mx-auto rounded sm:hover:scale-y-110 transition" src={imgUrl} />
             </div>
 
-
         </div>
     );
 }

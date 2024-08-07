@@ -22,7 +22,6 @@ import ScrollToTop from "../utils/ScrollToTop";
 // hooks
 import { useRef, useContext, useEffect, useState} from "react";
 
-
 const HomeScreen = () => {
 
     const aboutRef = useRef(null)
@@ -89,7 +88,7 @@ const HomeScreen = () => {
                             
                                 <div className="flex flex-col items-center text-center gap-4">
                                     <div className="flex max-sm:flex-col items-center gap-3 mb-4">
-                                        <img className="size-24 border border-primary_blue p-2 rounded-full" src="./public/assets/photo.jpg" />
+                                        <img className="size-24 border border-primary_blue p-2 rounded-full" src="../public/assets/photo.jpg" />
                                         <span className="block font-bold text-md text-primary_blue uppercase">Full Stack Developer</span>
                                     </div>
 

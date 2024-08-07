@@ -17,9 +17,7 @@ const Gallery = () => {
                     <div className="max-md:gap-6 p-6 text-xl max-[960px]:text-[15px] h-48 max-md:h-auto overflow-hidden rounded-lg bg-primary_grey dark:bg-secondary_black shadow-lg col-span-2 md:h-80 text-secondary_black dark:text-white/50">
                         <h3 className='mb-8'>I am Emad.</h3>
                         <p className='text-justify'> 
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero quam, eligendi est eaque sequi!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vero quam, eligendi est eaque sequi!
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            I am a full-stack developer with a Bachelor's in Computer Science from The University of Lahore. I excel in creating dynamic, responsive web applications, handling both frontend and backend tasks. Passionate about problem-solving, I’m dedicated to delivering high-quality solutions and continuously enhancing my skills.
                         </p>
 
                     </div>

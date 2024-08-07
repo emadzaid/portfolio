@@ -93,10 +93,10 @@ const HomeScreen = () => {
                                     </div>
 
                                     <h1 className="text-4xl font-semibold mb-3 max-md:text-2xl overflow-hidden whitespace-nowrap animate-typing">Hello, I'm Emad Zaid</h1>
-                                    <p className="w-9/12 mb-4 max-lg:w-full max-sm:text-sm"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex, natus. Officia aliquid odit quam deserunt? Placeat ipsa, ea, tempore sit commodi ducimus</p>
+                                    <p className="w-9/12 mb-4 max-lg:w-full max-sm:text-sm"> I am a highly motivated full-stack developer with a strong background in building dynamic and responsive web applications using modern technologies.</p>
                                     
                                     <div className="flex max-[500px]:flex-col items-center gap-4">
-                                        <Button text={"Download CV"} path={"./public/assets/MERN_CV.pdf"}> </Button>
+                                        <Button text={"Download CV"} path={"/assets/MERN_CV.pdf"}> </Button>
                                         <button id="emailBtn" value={"emadzaid98@gmail.com"} className="w-60 py-2 rounded text-white bg-secondary_black text-sm cursor-pointer hover:opacity-50 transition">emadzaid98@gmail.com</button>
                                     </div>
                                    
@@ -131,7 +131,7 @@ const HomeScreen = () => {
 
                     <section className="px-24 max-lg:px-12 max-sm:px-6 max-[430px]:px-2 py-8 mb-12 max-[460px]:mb-8" id="services">
 
-                        <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Services  </h2> </center>
+                        <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> What I do  </h2> </center>
 
                         <div className="grid grid-cols-2 max-md:grid-cols-1 item place-items-center text-primary_black dark:text-primary_white mb-8">
                             <div className="group px-4 max-[500px]:py-1 py-8 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
@@ -141,8 +141,8 @@ const HomeScreen = () => {
                                     <FaCode className="group-hover:text-primary_blue text-2xl" />
                                 </div>
 
-                                <h3 className="text-xl max-md:text-[16px] mb-2 group-hover:text-primary_blue transition"> Web Development</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti maxime tempore, ullam placeat perferendis ipsa enim quisquam </p>
+                                <h3 className="text-xl max-md:text-[16px] mb-2 group-hover:text-primary_blue transition"> Frontend Development</h3>
+                                <p> Crafting visually appealing and user-friendly interfaces using the latest web technologies to ensure a seamless user experience across all devices. </p>
                             </div>
 
                             <div className="group px-4 py-8 max-[500px]:py-1 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
@@ -152,8 +152,8 @@ const HomeScreen = () => {
                                     <FaTv className=" group-hover:text-primary_blue text-2xl" />
                                 </div>
 
-                                <h3 className="group-hover:text-primary_blue text-xl max-md:text-[16px] mb-2 hover:text-primary_blue transition inline-block">Frontend Development</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti maxime tempore, ullam placeat perferendis ipsa enim quisquam </p>
+                                <h3 className="group-hover:text-primary_blue text-xl max-md:text-[16px] mb-2 hover:text-primary_blue transition inline-block">Backend Development</h3>
+                                <p> Building robust and scalable server-side applications, managing databases, and implementing APIs to support front-end functionality. </p>
                             </div>
 
                         <div className="group px-4 py-8 max-[500px]:mb-8 hover:bg-primary_grey dark:hover:bg-secondary_black">
@@ -163,8 +163,8 @@ const HomeScreen = () => {
                                     <FaDatabase className="group-hover:text-primary_blue text-2xl" />
                                 </div>
 
-                                <h3 className="group-hover:text-primary_blue text-xl max-md:text-[16px] mb-2 hover:text-primary_blue transition inline-block">Backend Development</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti maxime tempore, ullam placeat perferendis ipsa enim quisquam </p>
+                                <h3 className="group-hover:text-primary_blue text-xl max-md:text-[16px] mb-2 hover:text-primary_blue transition inline-block">Responsive Pages</h3>
+                                <p> Designing and developing web pages that automatically adjust and perform optimally on various screen sizes and devices, providing a consistent user experience. </p>
                             </div>
 
                         <div className="group px-4 py-8 max-[500px]:mb-8 hover:bg-primary_grey dark:hover:bg-secondary_black">
@@ -175,7 +175,7 @@ const HomeScreen = () => {
                                 </div>
 
                                 <h3  className="group-hover:text-primary_blue text-xl max-md:text-[16px] mb-2 hover:text-primary_blue transition inline-block"> Bug Fixing</h3>
-                                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse corrupti maxime tempore, ullam placeat perferendis ipsa enim quisquam </p>
+                                <p> Identifying, diagnosing, and resolving issues in code to ensure the smooth operation and reliability of web applications, enhancing overall performance. </p>
                             </div>
                         
                         </div>
@@ -194,8 +194,8 @@ const HomeScreen = () => {
                     <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Featured Projects  </h2> </center>
 
                         <div className="py-6 mt-8 flex flex-col items-center gap-10">
-                            {projectsData.slice(4,6).map((proj => {
-                                return <ProjectCard key={proj.id} name={proj.name} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient}/>
+                            {projectsData.slice(0,2).map((proj => {
+                                return <ProjectCard key={proj.id} name={proj.name} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient} url={proj.url} codeUrl={proj.codeUrl} builtWith={proj.builtWith}/>
                             }))}
                         </div>
                         

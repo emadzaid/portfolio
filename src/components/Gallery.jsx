@@ -10,7 +10,7 @@ const Gallery = () => {
                 <div className="grid grid-cols-3 gap-4 max-md:grid-cols-1 max-md:flex max-md:flex-col md:gap-6 xl:gap-8">
 
                     <div className='group shadow-lg rounded-lg relative h-48 md:h-80 bg-primary_grey dark:bg-secondary_black flex justify-center items-center'>
-                        <LazyLoadImage src="/assets/photo.jpg" effect='blur' className="group-hover:grayscale-0 rounded-full size-40 max-md:size-32 grayscale" />
+                        <LazyLoadImage src="/assets/me.jpeg" effect='blur' className="group-hover:grayscale-0 rounded-full size-40 max-md:size-32 grayscale" />
                     </div>
             
 

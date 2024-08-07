@@ -10,7 +10,7 @@ const Gallery = () => {
                 <div className="grid grid-cols-3 gap-4 max-md:grid-cols-1 max-md:flex max-md:flex-col md:gap-6 xl:gap-8">
 
                     <div className='group shadow-lg rounded-lg relative h-48 md:h-80 bg-primary_grey dark:bg-secondary_black flex justify-center items-center'>
-                        <LazyLoadImage src="./public/assets/photo.jpg" effect='blur' className="group-hover:grayscale-0 rounded-full size-40 max-md:size-32 grayscale" />
+                        <LazyLoadImage src="/assets/photo.jpg" effect='blur' className="group-hover:grayscale-0 rounded-full size-40 max-md:size-32 grayscale" />
                     </div>
             
 
@@ -43,43 +43,43 @@ const Gallery = () => {
                             <ul x-ref="logos" className='flex gap-8 items-center justify-center flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infiniteScroll group-hover:paused '>
                             
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/html.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/html.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/css.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/css.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/js.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/js.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/react.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/react.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/node.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/node.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/mongodb.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/mongodb.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/express.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/express.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/sql.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/sql.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/bootstrap.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/bootstrap.svg'}  />
                                 </li>
 
                                 <li>
-                                    <img loading='lazy' className='size-16' src={'./public/assets/skills/tailwind.svg'}  />
+                                    <img loading='lazy' className='size-16' src={'/assets/skills/tailwind.svg'}  />
                                 </li>
 
                             </ul>

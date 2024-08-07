@@ -4,6 +4,7 @@ import ProjectScreen from './screens/ProjectScreen'
 import ThemeContext from './utils/ThemeContext';
 import {BrowserRouter, Routes, Route} from "react-router-dom"
 import { useState, useEffect } from "react";
+import ScrollToTopFix from './utils/ScrollToTopFix';
 
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
     <ThemeContext.Provider value={{ darkMode, toggleDarkMode }}>
 
         <BrowserRouter>
-
+          <ScrollToTopFix />
           <Routes>
             <Route path='/' element={<HomeScreen />} />
             <Route path='/projects' element={<ProjectScreen />} />

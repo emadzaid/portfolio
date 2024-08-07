@@ -88,7 +88,7 @@ const HomeScreen = () => {
                             
                                 <div className="flex flex-col items-center text-center gap-4">
                                     <div className="flex max-sm:flex-col items-center gap-3 mb-4">
-                                        <img className="size-24 border border-primary_blue p-2 rounded-full object-cover" src="./public/assets/me.jpeg" />
+                                        <img loading="lazy" className="size-24 border border-primary_blue p-2 rounded-full object-cover" src="/assets/me.jpeg" />
                                         <span className="block font-bold text-md text-primary_blue uppercase">Full Stack Developer</span>
                                     </div>
 

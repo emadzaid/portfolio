@@ -108,7 +108,7 @@ const HomeScreen = () => {
                                     <div className="flex flex-row gap-4 mt-6 text-2xl items-center">
                                         <a href="https://github.com/emadzaid/Musify.github.io" className="p-1 hover:text-primary_blue transition"> <FaGithub /> </a>
                                         <a href="https://www.linkedin.com/in/emad-zaid-1653871ba/" className="p-1 hover:text-primary_blue transition"> <FaLinkedin /> </a>
-                                        <a href="#" className="p-1 hover:text-primary_blue transition"> <FaInstagram /> </a>
+                                        <a href="https://www.instagram.com/emad_man98?igsh=dmQyYjF6eDM3eWJx" className="p-1 hover:text-primary_blue transition"> <FaInstagram /> </a>
                                     </div>
                               
 
@@ -144,7 +144,8 @@ const HomeScreen = () => {
                         <Fade direction="left" triggerOnce={true} duration={1000} fraction={0.3}>
 
                         <div className="grid grid-cols-2 max-md:grid-cols-1 item place-items-center text-primary_black dark:text-primary_white mb-8">
-                            <div className="group px-4 max-[500px]:py-1 py-8 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                            
+                            <div className="group max-md:border-b px-4 max-[500px]:py-4 py-8 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
 
                                 <div className="flex justify-between ">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light block ">01</span>
@@ -155,7 +156,7 @@ const HomeScreen = () => {
                                 <p> Crafting visually appealing and user-friendly interfaces using the latest web technologies to ensure a seamless user experience across all devices. </p>
                             </div>
 
-                            <div className="group px-4 py-8 max-[500px]:py-1 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                            <div className="group px-4 py-8 max-[500px]:py-4 mb-2 hover:bg-primary_grey max-md:border-b dark:hover:bg-secondary_black">
                                 
                                 <div className="flex justify-between">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light inline-block">02</span>
@@ -166,7 +167,7 @@ const HomeScreen = () => {
                                 <p> Building robust and scalable server-side applications, managing databases, and implementing APIs to support front-end functionality. </p>
                             </div>
 
-                            <div className="group px-4 py-8 max-[500px]:py-1 max-[500px]:mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                            <div className="group px-4 py-8 max-[500px]:py-4 max-[500px]:mb-2 max-md:border-b hover:bg-primary_grey dark:hover:bg-secondary_black">
 
                                 <div className="flex justify-between">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light">03</span>
@@ -177,7 +178,7 @@ const HomeScreen = () => {
                                 <p> Designing and developing web pages that automatically adjust and perform optimally on various screen sizes and devices, providing a consistent user experience. </p>
                             </div>
 
-                        <div className="group px-4 py-8 max-[500px]:py-1 max-[500px]:mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                            <div className="group px-4 py-8 max-[500px]:py-4 max-[500px]:mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
 
                                 <div className="flex justify-between">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light">04</span>
@@ -230,21 +231,23 @@ const HomeScreen = () => {
                     {/* ------------------------  Featured Projects showcase END  ----------------------------------------------------------------------------  */}
 
 
-                <Fade direction="left" triggerOnce={true}>
                     <section className="py-8" ref={aboutRef}>
-                        {/* <h2 className="text-3xl text-primary_blue max-sm:text-2xl mb-6 inline-block"> About me  </h2> */}
-                        <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> About Me  </h2> </center>
+                        <Fade direction="left" triggerOnce={true}>
 
-                        <Gallery />
+                            {/* <h2 className="text-3xl text-primary_blue max-sm:text-2xl mb-6 inline-block"> About me  </h2> */}
+                            <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> About Me  </h2> </center>
 
-                        <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
+                            <Gallery />
+
+                            <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
+                            </Fade>
 
                     </section>
-                </Fade>
 
-                <Fade direction="left" triggerOnce={true}>
 
                     <section ref={contactRef} className="bg-white dark:bg-primary_black pt-8">
+                    
+                    <Fade direction="left" triggerOnce={true}>
 
                         {/* <h2 className="ml-12 text-xl max-sm:text-lg font-light border-b-4 border-primary_blue pr-6 inline-block text-primary_blue"> Contact me </h2> */}
 
@@ -270,12 +273,13 @@ const HomeScreen = () => {
                                 <button onClick={() => sendMail()} type="button" className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-secondary_black/50 hover:bg-secondary_black/100 sm:w-fit focus:outline-none">Send message</button>
                             </form>
                         </div>
+
+                        </Fade>
+
                     </section>
 
-                    </Fade>
 
                     <ScrollToTop className="text-red-500 size-24" />
-
 
                     <Footer about={aboutRef} proj={projRef} contact={contactRef} />
 

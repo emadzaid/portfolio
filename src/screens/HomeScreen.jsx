@@ -13,12 +13,15 @@ import projectsData from "../projectsData";
 
 // utilities 
 
-import { FaGithub, FaLinkedin, FaRegEnvelope, FaDatabase, FaKeyboard ,FaServer, FaTv ,FaCode} from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaInstagram, FaDatabase, FaKeyboard ,FaServer, FaTv ,FaCode} from 'react-icons/fa';
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from "react-router-dom"; 
 import ThemeContext from "../utils/ThemeContext";
 import ScrollToTop from "../utils/ScrollToTop";
+import {Fade} from "react-awesome-reveal";
+
+
 // hooks
 import { useRef, useContext, useEffect, useState} from "react";
 
@@ -84,6 +87,7 @@ const HomeScreen = () => {
                         {/* <Navbar about={aboutRef} proj={projRef}  /> */}
                         <NavbarV2 about={aboutRef} proj={projRef} contact={contactRef} />
 
+                    <Fade triggerOnce={true}>
                         <header className="mt-14 p-8 max-[500px]:p-4 dark:text-primary_white sticky border-b dark:border-secondary_black">
                             
                                 <div className="flex flex-col items-center text-center gap-4">
@@ -101,11 +105,11 @@ const HomeScreen = () => {
                                     </div>
                                    
 
-                                    {/* <div className="flex flex-row gap-4 mt-6 text-2xl items-center">
-                                        <a href="#" className="p-1 hover:text-primary_blue transition"> <FaGithub /> </a>
-                                        <a href="#" className="p-1 hover:text-primary_blue transition"> <FaLinkedin /> </a>
-                                        <a href="#" className="p-1 hover:text-primary_blue transition"> <FaRegEnvelope /> </a>
-                                    </div> */}
+                                    <div className="flex flex-row gap-4 mt-6 text-2xl items-center">
+                                        <a href="https://github.com/emadzaid/Musify.github.io" className="p-1 hover:text-primary_blue transition"> <FaGithub /> </a>
+                                        <a href="https://www.linkedin.com/in/emad-zaid-1653871ba/" className="p-1 hover:text-primary_blue transition"> <FaLinkedin /> </a>
+                                        <a href="#" className="p-1 hover:text-primary_blue transition"> <FaInstagram /> </a>
+                                    </div>
                               
 
                                 {/* <LazyLoadImage effect="blur" className="h-96 w-96 border rotate-6 -translate-y-3 rounded shadow-lg hover:animate-pulse p-2 max-lg:hidden" src="./public/assets/hero.jpg" /> */}
@@ -113,6 +117,8 @@ const HomeScreen = () => {
                             </div>
 
                         </header>
+
+                    </Fade>
         
                         {/* <div className="h-[2px] w-1/2 bg-primary_grey m-auto"></div> */}
 
@@ -129,9 +135,13 @@ const HomeScreen = () => {
 
                     {/* ------------------------  Services Start     ----------------------------------------------------------------------------  */}
 
+
                     <section className="px-24 max-lg:px-12 max-sm:px-6 max-[430px]:px-2 py-8 mb-12 max-[460px]:mb-8" id="services">
 
-                        <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> What I do  </h2> </center>
+
+                    <Fade direction="down" triggerOnce={true} duration={1000} fraction={0.3}> <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> What I do  </h2> </center> </Fade>
+
+                        <Fade direction="left" triggerOnce={true} duration={1000} fraction={0.3}>
 
                         <div className="grid grid-cols-2 max-md:grid-cols-1 item place-items-center text-primary_black dark:text-primary_white mb-8">
                             <div className="group px-4 max-[500px]:py-1 py-8 mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
@@ -156,7 +166,7 @@ const HomeScreen = () => {
                                 <p> Building robust and scalable server-side applications, managing databases, and implementing APIs to support front-end functionality. </p>
                             </div>
 
-                        <div className="group px-4 py-8 max-[500px]:mb-8 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                            <div className="group px-4 py-8 max-[500px]:py-1 max-[500px]:mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
 
                                 <div className="flex justify-between">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light">03</span>
@@ -167,7 +177,7 @@ const HomeScreen = () => {
                                 <p> Designing and developing web pages that automatically adjust and perform optimally on various screen sizes and devices, providing a consistent user experience. </p>
                             </div>
 
-                        <div className="group px-4 py-8 max-[500px]:mb-8 hover:bg-primary_grey dark:hover:bg-secondary_black">
+                        <div className="group px-4 py-8 max-[500px]:py-1 max-[500px]:mb-2 hover:bg-primary_grey dark:hover:bg-secondary_black">
 
                                 <div className="flex justify-between">
                                     <span className="text-4xl max-md:text-3xl inline-block mb-4 font-light">04</span>
@@ -180,9 +190,14 @@ const HomeScreen = () => {
                         
                         </div>
 
+                        </Fade>
+
+
                         <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
 
                     </section>
+
+
 
                     {/* ------------------------  Services End     ----------------------------------------------------------------------------  */}
 
@@ -191,8 +206,9 @@ const HomeScreen = () => {
 
                     <section className="px-12 max-[460px]:px-4 pb-8" id="projects" ref={projRef}>
 
-                    <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Featured Projects  </h2> </center>
+                    <Fade direction="down" triggerOnce={true}> <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Featured Projects  </h2> </center> </Fade>
 
+                    <Fade direction="left" triggerOnce={true}> 
                         <div className="py-6 mt-8 flex flex-col items-center gap-10">
                             {projectsData.slice(0,2).map((proj => {
                                 return <ProjectCard key={proj.id} name={proj.name} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient} url={proj.url} codeUrl={proj.codeUrl} builtWith={proj.builtWith}/>
@@ -204,6 +220,9 @@ const HomeScreen = () => {
                         </center>
 
                         <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
+                    </Fade>
+
+                    
 
                     </section>
 
@@ -211,15 +230,21 @@ const HomeScreen = () => {
                     {/* ------------------------  Featured Projects showcase END  ----------------------------------------------------------------------------  */}
 
 
+                <Fade direction="left" triggerOnce={true}>
                     <section className="py-8" ref={aboutRef}>
                         {/* <h2 className="text-3xl text-primary_blue max-sm:text-2xl mb-6 inline-block"> About me  </h2> */}
                         <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> About Me  </h2> </center>
 
                         <Gallery />
+
+                        <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
+
                     </section>
+                </Fade>
 
+                <Fade direction="left" triggerOnce={true}>
 
-                    <section ref={contactRef} className="bg-white dark:bg-primary_black">
+                    <section ref={contactRef} className="bg-white dark:bg-primary_black pt-8">
 
                         {/* <h2 className="ml-12 text-xl max-sm:text-lg font-light border-b-4 border-primary_blue pr-6 inline-block text-primary_blue"> Contact me </h2> */}
 
@@ -246,6 +271,8 @@ const HomeScreen = () => {
                             </form>
                         </div>
                     </section>
+
+                    </Fade>
 
                     <ScrollToTop className="text-red-500 size-24" />
 

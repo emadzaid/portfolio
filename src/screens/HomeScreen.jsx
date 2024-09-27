@@ -101,7 +101,7 @@ const HomeScreen = () => {
                                     
                                     <div className="flex max-[500px]:flex-col items-center gap-4">
                                         <Button text={"Download CV"} path={"/assets/Fullstack_CV.pdf"}> </Button>
-                                        <button id="emailBtn" value={"emadzaid98@gmail.com"} className="w-60 py-2 rounded text-white bg-secondary_black text-sm cursor-pointer hover:opacity-50 transition">emadzaid98@gmail.com</button>
+                                        <button id="emailBtn" value={"emadzaid98@gmail.com"} className="w-60 py-2 rounded text-white bg-secondary_black text-sm cursor-pointer hover:opacity-50 transition">emadzaid89@gmail.com</button>
                                     </div>
                                    
 

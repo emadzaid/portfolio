@@ -64,7 +64,7 @@ const HomeScreen = () => {
               .then(function() {
                 emailBtn.textContent = "Copied!";
                 setTimeout(() => {
-                    emailBtn.textContent = "emadzaid98@gmail.com";
+                    emailBtn.textContent = "emadzaid89@gmail.com";
                 }, 2000)
               })
 
@@ -100,7 +100,7 @@ const HomeScreen = () => {
                                     <p className="w-9/12 mb-4 max-lg:w-full max-sm:text-sm"> I am a highly motivated full-stack developer with a strong background in building dynamic and responsive web applications using modern technologies.</p>
                                     
                                     <div className="flex max-[500px]:flex-col items-center gap-4">
-                                        <Button text={"Download CV"} path={"/assets/MERN_CV.pdf"}> </Button>
+                                        <Button text={"Download CV"} path={"/assets/Fullstack_CV.pdf"}> </Button>
                                         <button id="emailBtn" value={"emadzaid98@gmail.com"} className="w-60 py-2 rounded text-white bg-secondary_black text-sm cursor-pointer hover:opacity-50 transition">emadzaid98@gmail.com</button>
                                     </div>
                                    

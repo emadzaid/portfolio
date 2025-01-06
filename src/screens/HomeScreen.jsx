@@ -1,20 +1,12 @@
 // components
-import Navbar from "../components/Navbar";
 import Button from "../components/Button";
 import Gallery from "../components/Gallery";
-import SkillCard from "../components/SkillCard";
-import ProjectShowcaseCard from "../components/ProjectShowcaseCard";
-import ProjectCard from "../components/ProjectCard";
 import Footer from "../components/Footer";
 import NavbarV2 from "../components/NavbarV2";
-// data
-
-import projectsData from "../projectsData";
 
 // utilities 
 
-import { FaGithub, FaLinkedin, FaInstagram, FaDatabase, FaKeyboard ,FaServer, FaTv ,FaCode} from 'react-icons/fa';
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { FaGithub, FaLinkedin, FaInstagram, FaDatabase, FaKeyboard , FaTv ,FaCode, FaEye} from 'react-icons/fa';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import { Link } from "react-router-dom"; 
 import ThemeContext from "../utils/ThemeContext";
@@ -92,7 +84,7 @@ const HomeScreen = () => {
                             
                                 <div className="flex flex-col items-center text-center gap-4">
                                     <div className="flex max-sm:flex-col items-center gap-3 mb-4">
-                                        <img loading="lazy" className="size-24 border border-primary_blue p-2 rounded-full object-cover" src="/assets/me.jpeg" />
+                                        <img loading="lazy" className="size-24 border border-primary_blue p-2 rounded-full object-cover" src="/assets/me.jpg" />
                                         <span className="block font-bold text-md text-primary_blue uppercase">Full Stack Developer</span>
                                     </div>
 
@@ -112,26 +104,15 @@ const HomeScreen = () => {
                                     </div>
                               
 
-                                {/* <LazyLoadImage effect="blur" className="h-96 w-96 border rotate-6 -translate-y-3 rounded shadow-lg hover:animate-pulse p-2 max-lg:hidden" src="./public/assets/hero.jpg" /> */}
-
                             </div>
 
                         </header>
 
                     </Fade>
         
-                        {/* <div className="h-[2px] w-1/2 bg-primary_grey m-auto"></div> */}
-
                     </section>
 
                     {/* ------------------------  Header End     ----------------------------------------------------------------------------  */}
-
-                    {/* ------------------------  About Start     ----------------------------------------------------------------------------  */}
-
-
-                    {/* ------------------------  About End     ----------------------------------------------------------------------------  */}
-
-
 
                     {/* ------------------------  Services Start     ----------------------------------------------------------------------------  */}
 
@@ -207,23 +188,23 @@ const HomeScreen = () => {
 
                     <section className="px-12 max-[460px]:px-4 pb-8" id="projects" ref={projRef}>
 
-                    <Fade direction="down" triggerOnce={true}> <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Featured Projects  </h2> </center> </Fade>
+                        <Fade direction="down" triggerOnce={true}> <center><h2 className="text-3xl max-sm:text-lg mb-8 font-light border-b-4 border-primary_blue inline-block text-primary_blue"> Featured Project  </h2> </center> </Fade>
 
-                    <Fade direction="left" triggerOnce={true}> 
-                        <div className="py-6 mt-8 flex flex-col items-center gap-10">
-                            {projectsData.slice(0,2).map((proj => {
-                                return <ProjectCard key={proj.id} name={proj.name} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient} url={proj.url} codeUrl={proj.codeUrl} builtWith={proj.builtWith}/>
-                            }))}
-                        </div>
-                        
-                        <center className="mb-12">
-                            <Link to={'/projects'} className="text-primary_blue underline cursor-pointer" >More Projects</Link>
-                        </center>
+                        <Fade direction="left" triggerOnce={true}> 
+                            <div className="py-2 flex flex-col items-center gap-10">
+                                <div className="mt-2">
+                                    <a href="https://shinrinshop.onrender.com/" target="_blank" className="text-[12px] font-bold px-4 py-2 bg-secondary_black hover:bg-primary_blue dark:bg-primary_blue dark:hover:bg-primary_black text-white mr-2"> <FaEye className="inline" /> Live Demo </a>
+                                    <a href="https://github.com/emadzaid/ShinrinShop" target="_blank" className="text-[12px] font-bold px-4 py-2 bg-secondary_black hover:bg-primary_blue dark:bg-primary_blue dark:hover:bg-secondary_black text-white mr-2"> <FaCode className="inline" /> Code </a>
+                                </div>
+                                <img className="h-[90%]" src={'/assets/projectshowcase/shinrinshop.png'} />
+                            </div>
+                            
+                            <center className="mb-12">
+                                <Link to={'/projects'} className="text-primary_blue underline cursor-pointer" >More Projects</Link>
+                            </center>
 
-                        <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
-                    </Fade>
-
-                    
+                            <div className="h-[2px] w-1/2 bg-primary_grey dark:bg-secondary_black m-auto"></div>
+                        </Fade>
 
                     </section>
 

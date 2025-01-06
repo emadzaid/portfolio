@@ -2,6 +2,16 @@ const projectsData = [
 
     {
         id: 1,
+        desc: 'E-Commerce platform for clothing brand',
+        name: 'ShinrinShop',
+        img: '/assets/projectshowcase/shinrinshop1.png',
+        url: 'https://shinrinshop.onrender.com/',
+        codeUrl: 'https://github.com/emadzaid/ShinrinShop/',
+        builtWith: 'MongoDB, Express, Node.js, React'
+    },
+
+    {
+        id: 2,
         desc: 'Todo list app',
         name: 'Dailybook',
         img: '/assets/projectshowcase/proj0.jpg',
@@ -12,8 +22,8 @@ const projectsData = [
     },
 
     {
-        id: 2,
-        desc: 'A music streaming site',
+        id: 3,
+        desc: 'A music streaming platform',
         name: 'Musify',
         img: '/assets/projectshowcase/proj1.jpg',
         url: 'https://emadzaid.github.io/Musify.github.io/',
@@ -24,8 +34,8 @@ const projectsData = [
     },
 
     {
-        id: 3,
-        desc: 'Make your japan tour smooth',
+        id: 4,
+        desc: 'Make your Japan tour memorable',
         name: 'Japan Tour',
         img: '/assets/projectshowcase/proj2.jpg',
         url: 'https://emadzaid.github.io/japanTour.github.io/',
@@ -36,8 +46,8 @@ const projectsData = [
     },
 
     {
-        id: 4,
-        desc: 'Universe lover site',
+        id: 5,
+        desc: 'Discover secrets of universe',
         name: 'Astrophile',
         img: '/assets/projectshowcase/proj3.jpg',
         url: 'https://emadzaid.github.io/Astrophile.github.io/',
@@ -49,7 +59,7 @@ const projectsData = [
     },
 
     {
-        id: 5,
+        id: 6,
         desc: 'A virtual bank',
         name: 'Bankist',
         img: '/assets/projectshowcase/proj4.jpg',
@@ -61,8 +71,8 @@ const projectsData = [
     },
 
     {
-        id: 6,
-        desc: 'Food website',
+        id: 7,
+        desc: 'Fast food chain',
         name: 'Omnifood',
         img: '/assets/projectshowcase/proj5.jpg',
         url: '',
@@ -74,8 +84,8 @@ const projectsData = [
     },
 
     {
-        id: 7,
-        desc: 'Lamp Shades',
+        id: 8,
+        desc: 'Lamp Shades E-Commerce platform',
         name: 'Pooky',
         img: '/assets/projectshowcase/proj6.jpg',
         url: '',

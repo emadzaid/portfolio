@@ -22,7 +22,7 @@ const ProjectScreen = ({}) => {
                     <h2 className="text-xl font-bold mb-2 pr-4 py-1 border-b-4 border-primary_blue text-primary_blue inline-block"> Projects </h2>
                     <div className="text-primary_black dark:text-primary_white pt-10 max-sm:w-full flex flex-col gap-12">
                         {projectsData.map((proj => {
-                            return <ProjectCard key={proj.id}  name={proj.name} builtWith={proj.builtWith} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient}/>
+                            return <ProjectCard key={proj.id}  name={proj.name} builtWith={proj.builtWith} url={proj.url} codeUrl={proj.codeUrl} desc={proj.desc} imgUrl={proj.img} gradient={proj.gradient}/>
                         }))}
                     
                     </div>
@@ -36,11 +36,3 @@ const ProjectScreen = ({}) => {
 }
  
 export default ProjectScreen;
-
-
-// <div className="text-primary_black dark:text-primary_white pt-10 grid grid-cols-2 max-lg:grid-cols-1 maxlg:w-9/12 max-sm:w-full gap-8">
-// {projectsData.map((proj => {
-//     return <ProjectShowcaseCard key={proj.id} desc={proj.desc} name={proj.name} imgPath={proj.img} url={proj.url} />
-// }))}
-
-// </div>

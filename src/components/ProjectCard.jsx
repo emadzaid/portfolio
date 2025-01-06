@@ -2,7 +2,7 @@ import { FaEye, FaCode} from "react-icons/fa";
 import {LazyLoadImage } from "react-lazy-load-image-component";
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const ProjectCard = ({name, desc, imgUrl, url, gradient, codeUrl, builtWith}) => {
+const ProjectCard = ({name, desc, imgUrl, url, gradient='bg-gradient-to-br from-gray-700 to-gray-500', codeUrl, builtWith}) => {
     return ( 
         <div className="flex max-lg:flex-col items-center ">
             <div className="border dark:border-secondary_black px-8 py-16 max-[460px]:py-6 w-1/2 max-lg:w-full bg-gray-100/50 dark:bg-secondary_black shadow-2xl float-left flex flex-col gap-6 text-center rounded">
